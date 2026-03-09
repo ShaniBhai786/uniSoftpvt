@@ -1,5 +1,5 @@
 import React from 'react'
-import bg from "../images/homeImage.svg"
+import bg from "../images/homeImage.png"
 import {ReactTyped} from "react-typed"
 
 function Home() {
@@ -15,9 +15,9 @@ function Home() {
       <div className="info">
         <h1>
           <ReactTyped
-        strings={[ "All Your Business Needs Under a Single Platform!" ]}
-        typeSpeed={40}
-        backSpeed={50}
+        strings={[ "All Your Business Needs Under a Single Platform!", "Streamline Your Operations with Our Comprehensive Software Solutions!", "Empowering Your Business with Cutting-Edge Software!" ]}
+        typeSpeed={30}
+        backSpeed={30}
         loop
         />
         </h1>
