@@ -4,16 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "vercel-build": "npm install && vite build",
-  "lint": "eslint .",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "vercel-build": "npm install && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
+    "formik": "^2.4.9",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-typed": "^2.0.12"
+    "react-typed": "^2.0.12",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -27,6 +29,6 @@
     "vite": "^7.3.1"
   },
   "engines": {
-  "node": ">=18"
-}
+    "node": ">=18"
+  }
 }

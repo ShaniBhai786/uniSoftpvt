@@ -1,9 +1,12 @@
 import React from 'react'
+import Feedback from '../components/Feedback'
+import ContactUs from '../components/ContactUs' 
 
 function Contact() {
   return (
     <div className='contact' id='contact'>
-      <h1>Contact Us</h1>
+      <Feedback />
+      <ContactUs />
     </div>
   )
 }
