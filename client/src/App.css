@@ -305,7 +305,7 @@ html{
   );
 }
 .member1{
-  background-image: url(./images/cto.jpeg);
+  /* background-image: url(./images/cto.jpeg); */
   background-size: cover;
   background-position: center;
 }
@@ -315,7 +315,7 @@ html{
   background-position: center;
 }
 .member3{
-  background-image: url(./images/md.jpeg);
+  /* background-image: url(./images/md.jpeg); */
   background-size: cover;
   background-position: center;
 }

@@ -17,7 +17,7 @@ function Teams() {
       <div className="members">
         <div className="m1">
           <div className="member1"></div>
-          <h3>Tahreem Fatima</h3>
+          <h3></h3>
           <span>CTO</span>
         </div>
         <div className="m2">
@@ -27,7 +27,7 @@ function Teams() {
         </div>
         <div className="m3">
           <div className="member3"></div>
-          <h3>Mrs. Roshaan</h3>
+          <h3>Mr. </h3>
           <span>MD</span>
         </div>
       </div>
