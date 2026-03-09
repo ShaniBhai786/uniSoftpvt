@@ -16,19 +16,19 @@ function Teams() {
       </ul> */}
       <div className="members">
         <div className="m1">
-          <div className="member"></div>
-          <h3>John Doe</h3>
+          <div className="member1"></div>
+          <h3>Tahreem Fatima</h3>
           <span>CTO</span>
         </div>
         <div className="m2">
-          <div className="member"></div>
+          <div className="member2"></div>
           <h3>Roshaan Ahmad</h3>
           <span>CEO</span>
         </div>
         <div className="m3">
-          <div className="member"></div>
-          <h3>Bob Johnson</h3>
-          <span>Lead Developer</span>
+          <div className="member3"></div>
+          <h3>Mrs. Roshaan</h3>
+          <span>MD</span>
         </div>
       </div>
     </div>

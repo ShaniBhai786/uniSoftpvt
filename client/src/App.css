@@ -291,7 +291,7 @@ html{
   background-size: cover;
   z-index: 5;
 }
-.member {
+.member1, .member2, .member3{
   width: 220px;
   height: 250px;
   overflow: hidden;
@@ -303,7 +303,19 @@ html{
     0% 75%, 
     0% 25%
   );
+}
+.member1{
+  background-image: url(./images/cto.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.member2{
   background-image: url(./images/ceo.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.member3{
+  background-image: url(./images/md.jpeg);
   background-size: cover;
   background-position: center;
 }
