@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {Formik, Form, Field, ErrorMessage} from 'formik'
 import * as Yup from 'yup'
+import emailjs from '@emailjs/browser';
 
 const Feedback = () => {
   const initialValues = {
@@ -13,14 +14,31 @@ const Feedback = () => {
     email: Yup.string().email('Invalid email format').required('Email is required'),
     message: Yup.string().required('Message is required')
   })
+
+  const form = useRef()
+  const sendEmail = () => {
+    emailjs.sendForm('service_h4te595', 'template_2hvz81g', form.current, {
+        publicKey: 'fc6N7Mxlt9B5xB58I',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   const onSubmit = (values, {resetForm}) => {
     console.log(values)
+    sendEmail()
     resetForm()
   }
   return (
     <div className='feedback-form'>
       <Formik initialValues = {initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
-        <Form>
+        <Form ref={form}>
             <div className="feed"><h1>Feedback</h1></div>
           <div className="inputs-div">
             <div className="input">
