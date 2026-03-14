@@ -22,7 +22,7 @@ function Quote() {
 
   const form = useRef()
   const sendEmail = () => {
-    emailjs.sendForm('service_3xs9iqc', 'template_34r1c2c', form.current, {
+    emailjs.sendForm('service_h4te595', 'template_34r1c2c', form.current, {
         publicKey: 'fc6N7Mxlt9B5xB58I',
       })
       .then(
