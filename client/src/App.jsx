@@ -6,6 +6,7 @@ import Organizations from "./pages/Organizations";
 import Teams from "./pages/Teams";
 import NavBar from "./components/NavBar";
 import Blogs from "./pages/Blogs";
+import Quote from "./components/Quote";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Organizations />
         <Teams />
         <Blogs />
+        <Quote />
       </div>
     </>
   );
