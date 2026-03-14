@@ -15,7 +15,7 @@ function Home() {
       <div className="info">
         <h1>
           <ReactTyped
-        strings={[ "All Your Business Needs Under a Single Platform!", "Streamline Your Operations with Our Comprehensive Software Solutions!", "Empowering Your Business with Cutting-Edge Software!" ]}
+        strings={[ "All Your Business Needs Under a Single Platform!", "Streamline Your Operations with Our Comprehensive Software Solutions!", "Empowering Your Business with Cutting-Edge Software Solutions!" ]}
         typeSpeed={30}
         backSpeed={30}
         loop

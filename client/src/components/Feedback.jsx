@@ -39,8 +39,8 @@ const Feedback = () => {
     <div className='feedback-form'>
       <Formik initialValues = {initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
         <Form ref={form}>
-            <div className="feed"><h1>Feedback</h1></div>
-          <div className="inputs-div">
+            <div className="inputs-div">
+            <h1 className='feed'>Feedback</h1>
             <div className="input">
               <Field type="text" name="name" placeholder='Your Name' className="input-field" />
               <ErrorMessage name="name" component="div" className="error" />
@@ -52,7 +52,7 @@ const Feedback = () => {
             </div>
 
             <div className="input">
-              <Field type="text" name="message" placeholder='Your Message' className="input-field" />
+              <Field type="text" name="message" id="message" placeholder='Your Message' className="input-field" />
               <ErrorMessage name="message" component="div" className="error" />
             </div>
 

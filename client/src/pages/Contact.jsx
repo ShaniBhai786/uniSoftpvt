@@ -5,8 +5,8 @@ import ContactUs from '../components/ContactUs'
 function Contact() {
   return (
     <div className='contact' id='contact'>
-      <Feedback />
-      <ContactUs />
+      <div className="f"><Feedback /></div>
+      <div className="c"><ContactUs /></div>
     </div>
   )
 }
