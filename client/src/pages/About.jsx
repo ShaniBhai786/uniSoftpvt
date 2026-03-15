@@ -67,7 +67,7 @@ function About() {
       </div>
 
       {/* Technologies */}
-      <div className="tech">
+      <div className="techs">
         <h2>Technologies We Use</h2>
         <div className="tech-list">
           <span>React</span>

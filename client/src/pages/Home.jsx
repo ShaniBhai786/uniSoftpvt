@@ -1,13 +1,9 @@
 import React from 'react'
-import bg from "../images/homeImage.png"
 import {ReactTyped} from "react-typed"
 
 function Home() {
   return (
     <div className='home' id='home'>
-      <div className="imgcontainer">
-        <img src={bg} alt="Background" />
-      </div>
       <div className="titleDiv">
         <h1 className="title">uniSoft</h1>
         <p className="salogan">The software of everykind!</p>

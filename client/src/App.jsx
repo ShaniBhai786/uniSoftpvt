@@ -1,26 +1,21 @@
 import "./App.css";
-import About from "./pages/About";
-import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
+import Secondary from "./pages/Secondary";
 import Contact from "./pages/Contact";
-import Organizations from "./pages/Organizations";
-import Teams from "./pages/Teams";
-import NavBar from "./components/NavBar";
-import Blogs from "./pages/Blogs";
-import Quote from "./components/Quote";
+import Tech from "./components/Tech";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <div className="container">
-        <Home />
-        <About />
-        <Contact />
-        <Organizations />
-        <Teams />
-        <Blogs />
-        <Quote />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/school" element={<Secondary />} />
+          <Route path="/tech" element={<Tech />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </>
   );
 }
