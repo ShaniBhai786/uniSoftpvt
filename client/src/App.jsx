@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./pages/Main";
 import Secondary from "./pages/Secondary";
 import Contact from "./pages/Contact";
-import Tech from "./components/Tech";
+import UniSoftTech from "./pages/UniSoftTech";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/school" element={<Secondary />} />
-          <Route path="/tech" element={<Tech />} />
+          <Route path="/tech" element={<UniSoftTech />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
