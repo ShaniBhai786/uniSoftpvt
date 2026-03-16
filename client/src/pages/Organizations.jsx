@@ -25,7 +25,7 @@ function Organizations() {
             software for businesses. We help companies grow digitally by
             delivering reliable and scalable technology products.
           </p>
-          <Link to="/tech" target="main"><button>Learn More</button></Link>
+          <Link to="/tech" ><button>Learn More</button></Link>
         </div>
 
         {/* School / Institute */}
@@ -37,7 +37,7 @@ function Organizations() {
             to prepare students for successful careers in the technology
             industry.
           </p>
-          <Link to="/school" target="blabk"><button>Explore Schools</button></Link>
+          <Link to="/school"><button>Explore Schools</button></Link>
         </div>
 
       </div>
