@@ -1,23 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from "../images/logo.jpeg"
-import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Institute_NavLinks from './Institute_NavLinks';
 
 function Instititute_Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+    const show_Menu = () => {
+      if (!menuOpen) {
+        setMenuOpen(true);
+      } else {
+        setMenuOpen(false);
+      }
+    };
   return (
     <div className='navBar'>
       <div className="logo-section">
-        <img src={logo} alt="logo" />
+              <div className="b"><FontAwesomeIcon icon={faBars} className="bars" onClick={show_Menu} /></div>
+              <div className="i"><img src={logo} alt="logo" /></div>
+              <div className="t"><h2>uniSoftpvt</h2></div>
+            </div>
+      <div className="a">
+        <Institute_NavLinks />
       </div>
-      <div className="navLinks">
-        <a href="#school">Home</a>
-        <a href="#about">About</a> 
-        <Link to="/contact">Contact</Link>
-        <a href="#organizations">Organizations</a>
-        <a href="#teams">Our Teams</a>
-        <a href="#blogs">Blogs</a>
-      </div>
+      {menuOpen && <Institute_NavLinks props={show_Menu} />}
       <div className="otherlinks">
-        <a href="/">Get a Quote</a>
+        <a href="/">Back to main page</a>
       </div>
     </div>
   )

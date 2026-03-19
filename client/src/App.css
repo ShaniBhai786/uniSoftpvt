@@ -1218,6 +1218,9 @@ html {
   background-color: #020617;
   display: block;
   position: absolute;
+  top: 60px;
+  left: 0%;
+  z-index: 9;
 }
 .form-container {
   max-width: 550px;
@@ -1231,7 +1234,7 @@ html {
 }
 .form-container:hover {
   box-shadow: 0 0 20px #007bff;
-  transform: translateY(-20px);
+  transform: translateY(-15px);
 }
 .form-container h2 {
   text-align: center;

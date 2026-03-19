@@ -13,11 +13,12 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/school" element={<Secondary />} />
+          <Route path="/school" element={<Secondary />} >
+          <Route path="enrollment-from" element={<EnrollmentForm />} />
+          </Route>
           <Route path="/tech" element={<UniSoftTech />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quote" element={<Quote />} />
-          <Route path="/enrollment-from" element={<EnrollmentForm />} />
         </Routes>
       </Router>
     </>

@@ -7,7 +7,7 @@ import NavLinkks from "./NavLinkks";
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const show_Menu = () => {
-    if (!menuOpen) {
+    if (!menuOpen) { 
       setMenuOpen(true);
     } else {
       setMenuOpen(false);
