@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import School from '../components/School'
 import Institute_Navbar from '../components/Instititute_Navbar'
+import Footer from '../components/Footer';
 
 function Secondary() {
   useEffect(() => {
@@ -10,6 +11,7 @@ function Secondary() {
     <div>
         <Institute_Navbar />
         <School />
+        <Footer />
     </div>
   )
 }

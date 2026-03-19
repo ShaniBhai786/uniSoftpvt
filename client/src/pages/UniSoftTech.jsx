@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Tech from '../components/Tech'
 import Instititute_Navbar from '../components/Instititute_Navbar'
+import Footer from '../components/Footer';
 
 function UniSoftTech() {
     useEffect(() => {
@@ -9,7 +10,8 @@ function UniSoftTech() {
   return (
     <>
     <Instititute_Navbar /> 
-    <Tech /> 
+    <Tech />
+    <Footer /> 
     </>
   )
 }

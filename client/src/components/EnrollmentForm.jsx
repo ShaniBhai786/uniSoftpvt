@@ -91,13 +91,13 @@ function EnrollmentForm() {
 
             <div className="form-group">
               <label><FontAwesomeIcon icon={faPhone} /> Phone</label>
-              <Field type="text" name="phone" placeholder="Student phone" />
+              <Field type="number" name="phone" placeholder="Student phone" />
               <ErrorMessage name="phone" component="div" className="error" />
             </div>
 
             <div className="form-group">
               <label><FontAwesomeIcon icon={faPhone} /> Guardian Phone</label>
-              <Field type="text" name="guardianPhone" placeholder="Guardian phone" />
+              <Field type="number" name="guardianPhone" placeholder="Guardian phone" />
               <ErrorMessage name="guardianPhone" component="div" className="error" />
             </div>
 

@@ -1220,17 +1220,18 @@ html {
   position: absolute;
 }
 .form-container {
-  max-width: 600px;
+  max-width: 550px;
   margin: 50px auto;
   padding: 30px;
   background: #1e293b;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   font-family: "Segoe UI", sans-serif;
-  transition: all 0.3s ease;
+  transition: all 1s ease-in-out;
 }
 .form-container:hover {
   box-shadow: 0 0 20px #007bff;
+  transform: translateY(-20px);
 }
 .form-container h2 {
   text-align: center;
@@ -1299,7 +1300,7 @@ textarea {
   transition: 0.3s;
 }
 
-button:hover {
+.enroll-btn:hover {
   transform: translateY(-2px);
   background: linear-gradient(135deg, #0056b3, #003f88);
 }
@@ -1310,3 +1311,75 @@ button:hover {
   margin-top: 4px;
 }
 
+.footer {
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-section h2.logo {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #c9d1d9;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #58a6ff;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons a {
+  font-size: 18px;
+  color: #c9d1d9;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #58a6ff;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #30363d;
+  padding-top: 15px;
+  font-size: 14px;
+}

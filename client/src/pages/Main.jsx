@@ -7,6 +7,7 @@ import Organizations from "./Organizations";
 import Teams from "./Teams";
 import Blogs from "./Blogs";
 import Quote from "../components/Quote";
+import Footer from '../components/Footer';
 
 function Main() {
   return (
@@ -19,6 +20,7 @@ function Main() {
         <Teams />
         <Blogs />
         <Quote />
+        <Footer />
     </div>
   )
 }
