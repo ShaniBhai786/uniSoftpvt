@@ -3,6 +3,7 @@ import logo from "../images/logo.jpeg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import Institute_NavLinks from './Institute_NavLinks';
+import { Link } from 'react-router-dom';
 
 function Instititute_Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ function Instititute_Navbar() {
       </div>
       {menuOpen && <Institute_NavLinks props={show_Menu} />}
       <div className="otherlinks">
-        <a href="/">Back to main page</a>
+        <Link to="/">Back to main page</Link>
       </div>
     </div>
   )
