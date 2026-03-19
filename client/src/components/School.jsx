@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function School() {
   return (
@@ -15,7 +16,7 @@ function School() {
       <div className="school-cta">
         <h3>Join uniSoft School</h3>
         <p>Providing quality education and modern IT skills for a brighter future.</p>
-        <button>Enroll Now</button>
+        <Link to="/enrollment-from"><button>Enroll Now</button></Link>
       </div>
 
       {/* Academic Programs */}

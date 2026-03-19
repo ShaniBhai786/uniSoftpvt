@@ -2,8 +2,17 @@ import React, {useRef} from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import emailjs from '@emailjs/browser';
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 function Quote() {
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
+  window.scrollTo(0, 0)
 
   const initialValues = {
     name: "",
@@ -44,6 +53,7 @@ function Quote() {
   return (
     <section className="quote" id="quote">
 
+      <FontAwesomeIcon icon={faArrowLeft} className='back-icon' onClick={handleBackClick} />
       <div className="quote-header">
         <h2>Get a Quote</h2>
         <p>

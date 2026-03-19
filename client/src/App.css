@@ -219,7 +219,7 @@ html {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0px 30px #0ea5e9;
 }
 
 .card h3 {
@@ -243,7 +243,11 @@ html {
   padding: 30px;
   border-radius: 12px;
 }
-
+.mission:hover, .vision:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 0px 30px #38bdf8;
+  transition: 0.3s;
+}
 /* tech */
 .techs {
   text-align: center;
@@ -964,6 +968,7 @@ html {
 .org-header h2 {
   font-size: 36px;
   margin-bottom: 10px;
+  color: #0ea5e9;
 }
 
 .org-header p {
@@ -990,7 +995,7 @@ html {
 
 .org-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0px 30px #0ea5e9;
 }
 
 .org-card h3 {
@@ -1164,7 +1169,7 @@ html {
   gap: 30px;
 }
 
-.tech-card {
+.tech-card, .tech-card-quote {
   background: #1e293b;
   padding: 30px;
   border-radius: 12px;
@@ -1172,11 +1177,27 @@ html {
   transition: 0.3s;
 }
 
-.tech-card:hover {
+.tech-card:hover, .tech-card-quote:hover {
   transform: translateY(-8px);
   box-shadow: 0 0px 30px #38bdf8;
 }
-
+.tech-card-quote {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: black;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.tech-card-quote:hover{ 
+  box-shadow: 0 0px 30px #38bdf8;
+  background: #1e293b;
+  color: white;
+}
+.tech-card-quote .tech-icon{
+  color: #0f172a;
+}
+.tech-card-quote.tech-icon:hover{
+  color: #0ea5e9;
+}
 .tech-icon {
   font-size: 35px;
   color: #38bdf8;
@@ -1190,4 +1211,118 @@ html {
 .tech-card p {
   color: #cbd5e1;
   line-height: 1.6;
+}
+
+
+
+/* Container */
+.form-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px 28px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Label */
+.form-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* Inputs & Select */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+  background: #fafafa;
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Error Message */
+.error {
+  color: #e63946;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Button */
+button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #007bff, #0056d2);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+button:hover {
+  background: linear-gradient(135deg, #0056d2, #003f9e);
+  transform: translateY(-1px);
+}
+
+/* Button Active */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .form-container h2 {
+    font-size: 22px;
+  }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
     faBook,
   faCode,
@@ -16,6 +17,7 @@ function Tech() {
       const handleBackClick = () => {
         navigate(-1);
       };
+      window.scrollTo(0, 0)
   return (
     <section className="tech" id="tech">
       <FontAwesomeIcon icon={faArrowLeft} className='back-icon' onClick={handleBackClick} />
@@ -66,13 +68,15 @@ function Tech() {
             challenges and improve operational efficiency.
           </p>
         </div>
-        <div className="tech-card">
+        <Link to="/quote">
+        <div className="tech-card-quote">
           <FontAwesomeIcon icon={faBook} className="tech-icon" />
           <h3>Get A Quote</h3>
           <p>
             Get a personalized quote for your project by contacting our sales team. We offer competitive pricing and flexible solutions to meet your
           </p>
         </div>
+        </Link>
       </div>
 
     </section>
