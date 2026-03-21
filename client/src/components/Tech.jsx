@@ -23,7 +23,7 @@ function Tech() {
       <FontAwesomeIcon icon={faArrowLeft} className='back-icon' onClick={handleBackClick} />
 
       <div className="tech-header">
-        <h2>UniSoft Tech Industry</h2>
+        <h2>uniSoft Tech Industry</h2>
         <p>
           We build modern digital solutions to help businesses grow in the
           digital world. Our team specializes in creating reliable,

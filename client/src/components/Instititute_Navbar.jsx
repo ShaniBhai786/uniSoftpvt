@@ -15,7 +15,7 @@ function Instititute_Navbar() {
       }
     };
   return (
-    <div className='navBar'>
+    <div className='navBar'> 
       <div className="logo-section">
               <div className="b"><FontAwesomeIcon icon={faBars} className="bars" onClick={show_Menu} /></div>
               <div className="i"><img src={logo} alt="logo" /></div>
@@ -26,7 +26,7 @@ function Instititute_Navbar() {
       </div>
       {menuOpen && <Institute_NavLinks props={show_Menu} />}
       <div className="otherlinks">
-        <Link to="/">Back to main page</Link>
+        <Link to="/">Visit Company</Link>
       </div>
     </div>
   )

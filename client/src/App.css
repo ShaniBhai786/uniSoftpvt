@@ -491,6 +491,7 @@ html {
   background-image: url(./images/teamsBg.png);
   background-size: cover;
   z-index: 5;
+  overflow: auto;
 }
 .member1,
 .member2,
@@ -830,20 +831,34 @@ html {
   }
   .home{
     background-position: left;
+    background-size: 250%;
   }
   html{
     width: 100dvw;
     height: 100dvh;
   }
-  .feedback-form, .contactus{
-    width: 90%;
+  .contactus{
+    width: 100%;
   }
-  /* .feedback-form form{
-    width: 90%;
+  .feedback-form{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
   }
   .inputs-div{
     width: 100%;
-  } */
+  }
+  .org-header h2{
+    font-size: 15px;
+  }
+  .otherlinks a{
+      font-size: 10px;
+      padding: 10px;
+  }
+  .tech-header h2{
+    font-size: 30px;
+  }
 }
 .quote {
   padding: 90px 10%;
@@ -1153,7 +1168,7 @@ html {
 }
 
 .tech-header h2 {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 10px;
   color: #38bdf8;
 }
