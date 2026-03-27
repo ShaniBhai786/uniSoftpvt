@@ -1,9 +1,10 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import {Formik, Form, Field, ErrorMessage} from 'formik'
 import * as Yup from 'yup'
+import Loading from "./Loading"
 import emailjs from '@emailjs/browser';
 
-const Feedback = () => {
+const Feedback = ({props}) => {
   const initialValues = {
     name: '',
     email: '',
@@ -31,8 +32,15 @@ const Feedback = () => {
   };
 
   const onSubmit = (values, {resetForm}) => {
-    console.log(values)
-    sendEmail()
+    setTimeout(() => {
+      props(true)
+    },1000)
+    setTimeout(() => {
+      console.log(values)
+      sendEmail()
+      alert("Feedback Sent Successfully!")
+      props(false)
+    },3000)
     resetForm()
   }
   return (

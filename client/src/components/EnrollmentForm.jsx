@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,8 +18,10 @@ import {
   faLocationDot,
   faIdCard,
 } from "@fortawesome/free-solid-svg-icons";
+import Loading from "./Loading";
 
 function EnrollmentForm() {
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate();
 
   const handleBackClick = () => navigate(-1);
@@ -56,12 +58,19 @@ function EnrollmentForm() {
 
   const onSubmit = (values, { resetForm }) => {
     console.log(values);
-    alert("Enrollment Submitted Successfully!");
+    setTimeout(() => {
+      setLoading(true)
+    },2000)
+    setTimeout(() => {
+      alert("Enrollment Completed Successfully!");
+      setLoading(false)
+    },1000)
     resetForm();
   };
 
   return (
     <div className="enrollment-form-container">
+      {loading && <Loading /> }
       <FontAwesomeIcon icon={faArrowLeft} className="back-icon" onClick={handleBackClick} />
 
       <div className="form-container">
