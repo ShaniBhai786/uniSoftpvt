@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 import logo from "../images/logo.jpeg";
+import emailjs from '@emailjs/browser';
 
 import {
   faArrowLeft,
@@ -56,11 +57,22 @@ function EnrollmentForm() {
     cnic: Yup.string().required("Required"),
   });
 
-  const onSubmit = (values, { resetForm }) => {
+  const onSubmit = async (values, { resetForm }) => {
+    try {
+      await emailjs.sendForm('service_iu869fm', 'template_0ds7q6l', form.current, {
+          publicKey: '5NYUNk6egOmHicaIZ',
+        })
+    } catch (error) {
+      console.log(error);
+      alert("Error Submiting form, Try again Later!")
+    }
+    finally{
+      
+    }
     console.log(values);
     setTimeout(() => {
       setLoading(true)
-    },2000)
+    },2000) 
     setTimeout(() => {
       alert("Enrollment Completed Successfully!");
       setLoading(false)

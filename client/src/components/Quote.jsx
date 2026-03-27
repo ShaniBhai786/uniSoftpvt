@@ -1,18 +1,20 @@
-import React, {useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import emailjs from '@emailjs/browser';
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import Loading from "./Loading";
 
 function Quote() {
+  const [loading, setLoading] = useState(false)
   const navigate = useNavigate();
 
   const handleBackClick = () => {
     navigate(-1);
   };
-  window.scrollTo(0, 0)
+  
 
   const initialValues = {
     name: "",
@@ -30,29 +32,30 @@ function Quote() {
   });
 
   const form = useRef()
-  const sendEmail = () => {
-    emailjs.sendForm('service_h4te595', 'template_34r1c2c', form.current, {
-        publicKey: 'fc6N7Mxlt9B5xB58I',
+  const onSubmit = async (values, { resetForm }) => {
+    try {
+      setLoading(true)
+      await emailjs.sendForm('service_3xs9iqc', 'template_0ds7q6l', form.current, {
+        publicKey: '5NYUNk6egOmHicaIZ',
       })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
-  const onSubmit = (values, { resetForm }) => {
+      resetForm();
+    } catch (error) {
+      console.log(error)      
+      alert("Error Getting a Qoute, Please try again later")
+    }
+    finally{
+      alert("Quote request sent successfully!");
+      setLoading(false)
+    }
     console.log(values);
-    alert("Quote request sent successfully!");
-    resetForm();
-    sendEmail()
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  },[!onSubmit])
   return (
     <section className="quote" id="quote">
-
+      {loading && <Loading />}
       <FontAwesomeIcon icon={faArrowLeft} className='back-icon' onClick={handleBackClick} />
       <div className="quote-header">
         <h2>Get a Quote</h2>
@@ -87,10 +90,10 @@ function Quote() {
           <div className="form-group">
             <Field as="select" name="service">
               <option value="">Select Service</option>
-              <option value="website">Website Development</option>
-              <option value="webapp">Web Application</option>
-              <option value="software">Custom Software</option>
-              <option value="design">UI/UX Design</option>
+              <option value="Website Development">Website Development</option>
+              <option value="Web Application">Web Application</option>
+              <option value="Custom Software">Custom Software</option>
+              <option value="UI/UX Design">UI/UX Design</option>
             </Field>
             <ErrorMessage name="service" component="span" className="error"/>
           </div>

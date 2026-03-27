@@ -15,12 +15,14 @@ function Contact() {
   };
 
   return (
+    <>
+    <FontAwesomeIcon icon={faArrowLeft} className='back-icon' title="Back" onClick={handleBackClick} />
     <div className='contact' id='contact'>
-      <FontAwesomeIcon icon={faArrowLeft} className='back-icon' title="Back" onClick={handleBackClick} />
-      <div className="f"><Feedback props={setLoading} /></div>
+      <div className="f"><Feedback setLoading={setLoading} /></div>
       <div className="c"><ContactUs /></div>
       {loading && <Loading/>}
     </div>
+    </>
   )
 }
 
