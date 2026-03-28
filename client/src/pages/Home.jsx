@@ -17,7 +17,7 @@ function Home() {
         loop
         />
         </h1>
-        <a href="#blogs"><button className='qoute-btn'>Get a Quote</button></a>
+        <a href="#quote"><button className='qoute-btn'>Get a Quote</button></a>
       </div>
     </div>
   )
