@@ -3,9 +3,9 @@ import { Analytics } from "@vercel/analytics/react"
 
 function Analytics() {
   return (
-    <div>
+    <>
       
-    </div>
+    </>
   )
 }
 

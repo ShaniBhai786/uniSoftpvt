@@ -8,7 +8,8 @@ function Home() {
         <h1 className="title">uniSoft</h1>
         <p className="salogan">The software of everykind!</p>
       </div>
-      <div className="info">
+      <div className="infos">
+        <div className="info">
         <h1>
           <ReactTyped
         strings={[ "All Your Business Needs Under a Single Platform!", "Streamline Your Operations with Our Comprehensive Software Solutions!", "Empowering Your Business with Cutting-Edge Software Solutions!" ]}
@@ -17,7 +18,8 @@ function Home() {
         loop
         />
         </h1>
-        <a href="#quote"><button className='qoute-btn'>Get a Quote</button></a>
+      </div>
+        <a href="#quote" className='qoute-btn-a'><button className='qoute-btn'>Get a Quote</button></a>
       </div>
     </div>
   )

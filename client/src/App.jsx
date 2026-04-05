@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import UniSoftTech from "./pages/UniSoftTech";
 import Quote from "./components/Quote";
 import EnrollmentForm from "./components/EnrollmentForm";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/quote" element={<Quote />} />
         </Routes>
       </Router>
+      <Analytics />
     </>
   );
 }
