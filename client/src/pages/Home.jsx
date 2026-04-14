@@ -7,10 +7,10 @@ function Home() {
     <div className='home' id='home'>
 
       <Helmet>
-        <title>UniSoft – Software, SEO & Web Development Company</title>
+        <title>uniSoft – Software, SEO & Web Development Company</title>
         <meta 
           name="description" 
-          content="UniSoft offers software development, SEO services, and website solutions to grow your business online." 
+          content="uniSoft offers software development, SEO services, and website solutions to grow your business online." 
         />
         <meta 
           name="keywords" 
