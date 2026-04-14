@@ -140,7 +140,7 @@ html {
 .qoute-btn {
   display: inline-block;
   position: relative;
-  padding: 20px;
+  padding: 18px;
   border-radius: 100px;
   background-color: #c7d419;
   color: black;
@@ -148,7 +148,7 @@ html {
   width: 15rem;
   letter-spacing: 1px;
   top: 6rem;
-  left: 50%;
+  left: 40%;
   cursor: pointer;
   overflow: hidden;
   transition: width 0.3s ease-in-out;

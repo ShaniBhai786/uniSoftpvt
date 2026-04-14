@@ -6,7 +6,6 @@ function Home() {
   return (
     <div className='home' id='home'>
 
-      {/* ✅ ADD HELMET HERE */}
       <Helmet>
         <title>UniSoft – Software, SEO & Web Development Company</title>
         <meta 
@@ -19,7 +18,6 @@ function Home() {
         />
       </Helmet>
 
-      {/* Hero Title */}
       <div className="titleDiv">
         <h1 className="title">
           uniSoft
@@ -29,7 +27,6 @@ function Home() {
         </h2>
       </div>
 
-      {/* Info Section */}
       <div className="infos">
         <div className="info">
           <h2>
