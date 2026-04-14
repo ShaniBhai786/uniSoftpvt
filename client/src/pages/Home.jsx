@@ -8,6 +8,7 @@ function Home() {
 
       <Helmet>
         <title>uniSoft – Software, SEO & Web Development Company</title>
+        <meta name="google-site-verification" content="YOUR_CODE" />
         <meta 
           name="description" 
           content="uniSoft offers software development, SEO services, and website solutions to grow your business online." 
