@@ -7,19 +7,28 @@ function Home() {
     <div className='home' id='home'>
 
       <Helmet>
-        <title>uniSoft – Software, SEO & Web Development Company</title>
+        <title>uniSoft – Best Software, SEO & Web Development Company in Pakistan</title>
         <meta name="google-site-verification" content="WsViIkxJ04PGtVYoEIi1Ki4kHW8UyjuXdEuRnHrTl3I" />
         <meta 
           name="description" 
           content="uniSoft offers software development, SEO services, diital marketing services, website solutions to grow your business online." 
-          icon="favicon.ico"
         />
         <meta 
           name="keywords"
-          content="unisoft company, software company, SEO services, web development, Pakistan IT company, unisoft software company, unisoft in US, unisoftpvt in US, best software company, universal software company, the software of every kind"   />
+          content="unisoft company, software company, SEO services, web development, Pakistan IT company, unisoft software company, unisoft in US, unisoftpvt in US, best software company, universal software company, the software of every kind, unisoftpvt"  />
 
           <link rel="icon" href="/favicon.ico" />
           <link rel="shortcut icon" href="/favicon.ico" />
+
+           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="uniSoft – Software & SEO Company" />
+  <meta property="og:description" content="Grow your business with UniSoft’s SEO, software & web solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://unisoftpvt.com" />
+  <meta property="og:image" content="https://unisoftpvt.com/preview.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
       <div className="titleDiv">
@@ -58,7 +67,7 @@ function Home() {
         </div>
 
         <a href="#quote" className='qoute-btn-a'>
-          <button className='qoute-btn'>Get Free Consultation</button>
+          <button className='qoute-btn'>Get Free SEO & Software Consultation</button>
         </a>
       </div>
 
