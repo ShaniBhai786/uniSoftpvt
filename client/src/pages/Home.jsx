@@ -8,15 +8,18 @@ function Home() {
 
       <Helmet>
         <title>uniSoft – Software, SEO & Web Development Company</title>
-        <meta name="google-site-verification" content="YOUR_CODE" />
+        <meta name="google-site-verification" content="WsViIkxJ04PGtVYoEIi1Ki4kHW8UyjuXdEuRnHrTl3I" />
         <meta 
           name="description" 
-          content="uniSoft offers software development, SEO services, and website solutions to grow your business online." 
+          content="uniSoft offers software development, SEO services, diital marketing services, website solutions to grow your business online." 
+          icon="favicon.ico"
         />
         <meta 
-          name="keywords" 
-          content="software company, SEO services, web development, Pakistan IT company" 
-        />
+          name="keywords"
+          content="unisoft company, software company, SEO services, web development, Pakistan IT company, unisoft software company, unisoft in US, unisoftpvt in US, best software company, universal software company, the software of every kind"   />
+
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href="/favicon.ico" />
       </Helmet>
 
       <div className="titleDiv">
