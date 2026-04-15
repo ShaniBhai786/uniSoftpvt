@@ -22,7 +22,7 @@ function Home() {
         <meta
           name="keywords"
           content="
-          uniSoft, uniSoft software company, unisoft company, unisoftpvt, unisoft in USA, unisoft software company is US, react.js next.js development services,
+          uniSoft, ubisoft, uniSoft software company, unisoft company, unisoftpvt, unisoft in USA, unisoft software company is US, react.js next.js development services,
           software company Pakistan,
           software house in Lahore,
           SEO services Pakistan,
@@ -76,7 +76,8 @@ function Home() {
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+92-305-3019712",
-    "contactType": "customer service"
+    "contactType": "customer service",
+    "ceo": "Roshaan Ahmad"
   }
 }
 `}
