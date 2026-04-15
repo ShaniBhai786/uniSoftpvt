@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
+import ceo from "../images/ceo.jpeg"
 
 const teamMembers = [
   {
@@ -17,7 +18,7 @@ const teamMembers = [
     name: "Dr. Roshaan",
     role: "Chief Executive Officer (CEO)",
     short: "CEO",
-    img: "member2",
+    img: ceo,
     desc: "Dr. Roshaan is the Founder and CEO of UniSoft Pvt Ltd. He oversees business strategy, client relations, and company growth, with expertise in software development, SEO, and digital transformation solutions.",
   },
   {
