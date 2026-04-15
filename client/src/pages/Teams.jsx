@@ -14,11 +14,11 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Roshaan Ahmad",
+    name: "Dr. Roshaan",
     role: "Chief Executive Officer (CEO)",
     short: "CEO",
     img: "member2",
-    desc: "Roshaan Ahmad is the Founder and CEO of UniSoft Pvt Ltd. He oversees business strategy, client relations, and company growth, with expertise in software development, SEO, and digital transformation solutions.",
+    desc: "Dr. Roshaan is the Founder and CEO of UniSoft Pvt Ltd. He oversees business strategy, client relations, and company growth, with expertise in software development, SEO, and digital transformation solutions.",
   },
   {
     id: 3,
@@ -78,22 +78,38 @@ function Teams() {
         <link rel="canonical" href="https://unisoftpvt.com/#teams" />
 
         <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "UniSoft",
-            "url": "https://unisoftpvt.com",
-            "employee": [
-              {
-                "@type": "Person",
-                "name": "Roshaan Ahmad",
-                "jobTitle": "CEO"
-              }
-            ]
-          }
-        `}
-        </script>
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UniSoft Pvt Ltd",
+  "url": "https://unisoftpvt.com",
+  "logo": "https://unisoftpvt.com/logo.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Roshaan",
+    "jobTitle": "Chief Executive Officer",
+    "image": "https://unisoftpvt.com/images/ceo.jpeg",
+    "sameAs": [
+      "https://www.linkedin.com/in/your-profile",
+      "https://www.facebook.com/your-profile"
+    ]
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Dr. Roshaan",
+      "jobTitle": "CEO",
+      "image": "https://unisoftpvt.com/images/ceo.jpeg"
+    }
+  ]
+}
+`}
+</script>
+<meta property="og:title" content="Dr. Roshaan - CEO UniSoft" />
+<meta property="og:description" content="Chief Executive Officer of UniSoft Pvt Ltd" />
+<meta property="og:image" content="https://unisoftpvt.com/images/ceo.jpeg" />
+<meta property="og:type" content="website" />
       </Helmet>
 
       {/* HEADING */}
