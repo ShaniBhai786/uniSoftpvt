@@ -22,7 +22,7 @@ function Home() {
         <meta
           name="keywords"
           content="
-          uniSoft, uniSoft software company, unisoft company, unisoftpvt, unisoftpvt company, uniSoft in us, unisoft in USA, unisoft software company is US, react next development servives
+          uniSoft, uniSoft software company, unisoft company, unisoftpvt, unisoft in USA, unisoft software company is US, react.js next.js development services,
           software company Pakistan,
           software house in Lahore,
           SEO services Pakistan,
@@ -58,9 +58,29 @@ function Home() {
           property="og:image"
           content="https://unisoftpvt.com/preview.png"
         />
+        <link rel="canonical" href="https://unisoftpvt.com/" />
+        <meta name="author" content="UniSoft" />
+        <meta property="og:image" content="https://unisoftpvt.com/preview.png" />
 
         {/* ✅ TWITTER */}
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "UniSoft",
+  "url": "https://unisoftpvt.com",
+  "logo": "https://unisoftpvt.com/favicon.ico",
+  "sameAs": [],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+92-305-3019712",
+    "contactType": "customer service"
+  }
+}
+`}
+</script>
       </Helmet>
 
       {/* ✅ HERO SECTION */}
@@ -102,8 +122,7 @@ function Home() {
         {/* ✅ CTA BUTTON */}
         <a href="#quote" className="qoute-btn-a">
           <button className="qoute-btn">
-            Get Free SEO & Software Consultation
-          </button>
+            Get Free Consultation </button>
         </a>
       </div>
 

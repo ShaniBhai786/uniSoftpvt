@@ -132,10 +132,10 @@ html {
 .descriptionTitle{
   display: flex;
   position: relative;
-  font-size: 15px;
+  font-size: 14px;
   color: gainsboro;
   width: 95%;
-  top: 10px;
+  top: 15px;
 }
 .qoute-btn {
   display: inline-block;
@@ -147,7 +147,7 @@ html {
   font-weight: bold;
   width: 15rem;
   letter-spacing: 1px;
-  top: 6rem;
+  top: 8rem;
   left: 40%;
   cursor: pointer;
   overflow: hidden;
