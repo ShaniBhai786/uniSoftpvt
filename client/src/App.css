@@ -553,7 +553,7 @@ html {
   border-radius: 50%;
   margin: auto;
   /* background: linear-gradient(135deg, #38bdf8, #6366f1); */
-  background: url(./images/ceo.jpeg);
+  /* background: url(./images/ceo.jpeg); */
   background-position: center;
   background-size: cover;
 }

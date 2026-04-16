@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import ceo from "../images/ceo.jpeg"
 
 const teamMembers = [
   {
@@ -12,14 +11,6 @@ const teamMembers = [
     short: "CTO",
     img: "member1",
     desc: "Dr. Alex Johnson leads UniSoft’s technology strategy and innovation initiatives. He specializes in building scalable, secure, and high-performance software systems while guiding the engineering team toward modern development practices.",
-  },
-  {
-    id: 2,
-    name: "Dr. Roshaan",
-    role: "Chief Executive Officer (CEO)",
-    short: "CEO",
-    img: ceo,
-    desc: "Dr. Roshaan is the Founder and CEO of UniSoft Pvt Ltd. He oversees business strategy, client relations, and company growth, with expertise in software development, SEO, and digital transformation solutions.",
   },
   {
     id: 3,
@@ -88,7 +79,7 @@ function Teams() {
   "logo": "https://unisoftpvt.com/logo.png",
   "founder": {
     "@type": "Person",
-    "name": "Dr. Roshaan",
+    "name": "Dr.Roshaan",
     "jobTitle": "Chief Executive Officer",
     "image": "https://unisoftpvt.com/images/ceo.jpeg",
     "sameAs": [
@@ -99,7 +90,7 @@ function Teams() {
   "employee": [
     {
       "@type": "Person",
-      "name": "Dr. Roshaan",
+      "name": "Roshaan Ahmad",
       "jobTitle": "CEO",
       "image": "https://unisoftpvt.com/images/ceo.jpeg"
     }
