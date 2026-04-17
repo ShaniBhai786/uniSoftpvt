@@ -231,6 +231,7 @@ html {
 .about-intro p {
   color: #cbd5e1;
   line-height: 1.7;
+  text-align: left;
 }
 
 /* cards */
@@ -433,7 +434,7 @@ html {
 }
 .submit-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(25, 212, 193, 0.6);
+  box-shadow: 0 0px 40px rgba(34, 32, 0, 0.6);
 }
 .contactus {
   width: 420px;
@@ -441,7 +442,7 @@ html {
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgb(61, 73, 1);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -552,12 +553,12 @@ html {
   height: 100px;
   border-radius: 50%;
   margin: auto;
-  /* background: linear-gradient(135deg, #38bdf8, #6366f1); */
-  /* background: url(./images/ceo.jpeg); */
-  background-position: center;
-  background-size: cover;
 }
-
+.member2{
+  background: url(./images/ceo.jpeg);
+  background-position: center;
+  background-size: 120%;
+}
 /* 🔥 BUTTON */
 .popover-btn {
   margin-top: 15px;
@@ -602,7 +603,7 @@ html {
 
 .inner h2 {
   margin-top: 10px;
-  color: #38bdf8;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -637,15 +638,15 @@ html {
   margin-top: 40px;
   padding: 12px 25px;
   border: none;
-  background: #6366f1;
-  color: white;
+  background: #c7d419;
+  color: black;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .submit-btn:hover {
-  background: #4f46e5;
+  background: #9ea814;
 }
 
 .team-info li {
@@ -792,11 +793,11 @@ html {
   background: #e0e0e0;
   border: none;
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 20px;
   padding: 6px 10px;
   cursor: pointer;
   transition: 0.3s;
-  z-index: 10;
+  z-index: 17;
 }
 
 .team-info .close:hover {
@@ -906,6 +907,11 @@ html {
   .teams{
     overflow: auto;
     padding-bottom: 30px;
+  }
+  .close{
+    z-index: 99;
+    position: absolute;
+    font-size: 29px;
   }
 }
 .close {

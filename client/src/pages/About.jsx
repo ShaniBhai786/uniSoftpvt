@@ -6,14 +6,10 @@ function About() {
 
       {/* About Intro */}
       <div className="about-intro">
-        <h2>About uniSoft</h2>
+        <h2>About UniSoft</h2>
         <p>
-          At uniSoft, we believe in creating innovative digital solutions that
-          help businesses grow in the modern world. Our team is committed to
-          delivering high-quality software, modern websites, and reliable
-          applications that provide real value to our clients. With creativity,
-          technology, and experience, we turn ideas into powerful digital
-          products.
+          UniSoft creates innovative digital solutions to help businesses grow, delivering high-quality software, modern websites, and reliable applications by combining creativity, technology, and experience.
+
         </p>
       </div>
 
