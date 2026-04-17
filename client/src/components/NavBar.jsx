@@ -23,7 +23,7 @@ function NavBar() {
       <div className="a"><NavLinkks /></div>
       {menuOpen && <NavLinkks props={show_Menu} />}
       <div className="otherlinks">
-        <a href="/school">Explore School</a>
+        <a href="#quote">Free Consultant</a>
       </div>
     </div>
   );
