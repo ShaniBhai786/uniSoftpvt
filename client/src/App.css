@@ -1013,6 +1013,9 @@ html {
     width: 80%;
     font-size: 12px;
   }
+  .salogan{
+    width: 90%;
+  }
   .home{
     background-position: left;
     background-size: 250%;
@@ -1020,7 +1023,7 @@ html {
   .infos{
     transform: translateY(-5rem);
     gap: 20px;
-    width: 90%;
+    width: 95%;
   }
   .infos a button{
     transform: translate(-3rem, 2rem);
