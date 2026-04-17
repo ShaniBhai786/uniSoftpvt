@@ -13,6 +13,14 @@ const teamMembers = [
     desc: "Dr. Alex Johnson leads UniSoft’s technology strategy and innovation initiatives. He specializes in building scalable, secure, and high-performance software systems while guiding the engineering team toward modern development practices.",
   },
   {
+    id: 2,
+    name: "Dr. Roshaan",
+    role: "Chief Executive Officer (CEO)",
+    short: "CEO",
+    img: "member2",
+    desc: "Dr. Roshaan is the Founder and CEO of UniSoft Pvt Ltd. He oversees business strategy, client relations, and company growth, with expertise in software development, SEO, and digital transformation solutions.",
+  },
+  {
     id: 3,
     name: "Johnathan Doe",
     role: "Managing Director (MD)",

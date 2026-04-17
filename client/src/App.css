@@ -1020,6 +1020,7 @@ html {
   .infos{
     transform: translateY(-5rem);
     gap: 20px;
+    width: 90%;
   }
   .infos a button{
     transform: translate(-3rem, 2rem);
