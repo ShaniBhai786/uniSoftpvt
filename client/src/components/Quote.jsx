@@ -90,10 +90,14 @@ function Quote() {
           <div className="form-group">
             <Field as="select" name="service">
               <option value="">Select Service</option>
+              <option value="SEO Service">SEO Service</option>
               <option value="Website Development">Website Development</option>
               <option value="Web Application">Web Application</option>
               <option value="Custom Software">Custom Software</option>
+              <option value="Business Management">Business Management</option>
               <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Meta Ads">Meta Ads</option>
+              <option value="Graphics Design Services">Graphics Design Services</option>
             </Field>
             <ErrorMessage name="service" component="span" className="error"/>
           </div>
