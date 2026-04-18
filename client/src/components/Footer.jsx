@@ -23,8 +23,7 @@ function Footer() {
         <div className="footer-section">
           <h2 className="logo">UniSoft</h2>
           <p>
-            uniSoft is a leading software company and IT institute providing
-            modern tech solutions and quality education from P.G to Intermediate.
+            UniSoft provides professional software development, website design, SEO services, digital marketing, and business automation solutions to help companies grow faster and smarter in the digital world.
           </p>
         </div>
 
@@ -50,22 +49,22 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Contact</h3>
-          <p><FontAwesomeIcon icon={faLocationDot} /> Punjab, Pakistan</p>
-          <p><FontAwesomeIcon icon={faPhone} /> +92 305 3019712</p>
-          <p><FontAwesomeIcon icon={faEnvelope} /> info@unisoftpvt.com</p>
+          <p><FontAwesomeIcon icon={faLocationDot} /> Wyoming, USA</p>
+          <p><FontAwesomeIcon icon={faPhone} /> +92 314 8588707</p>
+          <p><FontAwesomeIcon icon={faEnvelope} /> unisoftpvt@gmail.com</p>
 
           <div className="social-icons">
-            <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://www.facebook.com/share/1FkdLuFvcd/" target="_main"><FontAwesomeIcon icon={faFacebook} /></a>
             <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
-            <a href="#"><FontAwesomeIcon icon={faWhatsapp} /></a>
+            <a href="https://wa.me/923148588707" target="_main"><FontAwesomeIcon icon={faWhatsapp} /></a>
           </div>
         </div>
 
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} uniSoft. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} UniSoftpvt. All Rights Reserved.</p>
       </div>
     </footer>
   );

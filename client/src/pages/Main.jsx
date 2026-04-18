@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import NavBar from "../components/NavBar";
 import About from "./About";
 import Home from "./Home";
@@ -10,9 +10,19 @@ import Quote from "../components/Quote";
 import Footer from '../components/Footer';
 
 function Main() {
+  const [open, setOpen] = useState(false)
+  const handleDropDown = () => {
+    if (!open) {
+      setOpen(true)
+    }
+    else{
+      setOpen(false)
+    }
+  }
   return (
-    <div>
-        <NavBar />
+    <>
+        <NavBar handleDropDown={handleDropDown} setOpen={setOpen} open={open} />
+        <div onClick={() => setOpen(false)}>
         <Home />
         <About />
         <Contact />
@@ -21,7 +31,8 @@ function Main() {
         <Blogs />
         <Quote />
         <Footer />
-    </div>
+        </div>
+    </>
   )
 }
 

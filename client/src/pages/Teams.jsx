@@ -66,7 +66,7 @@ function Teams() {
       
       {/* SEO */}
       <Helmet>
-        <title>Our Team – UniSoft Software Company</title>
+        <title>UniSoft Software Company</title>
         <meta
           name="description"
           content="Meet the professional team of UniSoft, a leading software company in Pakistan and USA. Experts in development, SEO, and digital marketing."
@@ -75,7 +75,7 @@ function Teams() {
           name="keywords"
           content="UniSoft team, software company Pakistan, SEO experts, web developers, IT professionals"
         />
-        <link rel="canonical" href="https://unisoftpvt.com/#teams" />
+        <link rel="canonical" href="https://unisoftpvt.com/" />
 
         <script type="application/ld+json">
 {`

@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-function NavLinkks({props}) {
+function NavLinkks({handleDropDown}) {
   return (
-    <div className="navLinks" onClick={props}>
+    <div className="navLinks" onClick={handleDropDown}>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
