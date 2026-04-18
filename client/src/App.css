@@ -994,12 +994,16 @@ html {
   .otherlinks{
     position: absolute;
     align-self: flex-end;
-    top: 15px;
+    top: 45%;
     margin-right: 5%;
+    font-size: 9px;
   }
   .otherlinks a{
     padding: 10px 20px;
     letter-spacing: 1px;
+  }
+  #quote{
+    font-size:9px ;
   }
   .logo-section{
     display: flex;
