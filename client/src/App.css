@@ -554,9 +554,19 @@ html {
   border-radius: 50%;
   margin: auto;
 }
+.member1{
+  background: url(./images/cto.jpg);
+  background-position: top;
+  background-size: 120%;
+}
 .member2{
   background: url(./images/ceo.jpeg);
   background-position: center;
+  background-size: 120%;
+}
+.member3{
+  background: url(./images/md.jfif);
+  background-position: top;
   background-size: 120%;
 }
 /* 🔥 BUTTON */

@@ -6,11 +6,11 @@ import { Helmet } from "react-helmet";
 const teamMembers = [
   {
     id: 1,
-    name: "Dr. Alex Johnson",
+    name: "Dr. Johnathan Doe",
     role: "Chief Technology Officer (CTO)",
     short: "CTO",
     img: "member1",
-    desc: "Dr. Alex Johnson leads UniSoft’s technology strategy and innovation initiatives. He specializes in building scalable, secure, and high-performance software systems while guiding the engineering team toward modern development practices.",
+    desc: "Dr. Johnathan Doe leads UniSoft’s technology strategy and innovation initiatives. He specializes in building scalable, secure, and high-performance software systems while guiding the engineering team toward modern development practices.",
   },
   {
     id: 2,
@@ -18,15 +18,15 @@ const teamMembers = [
     role: "Chief Executive Officer (CEO)",
     short: "CEO",
     img: "member2",
-    desc: "Dr. Roshaan is the Founder and CEO of UniSoft Pvt Ltd. He oversees business strategy, client relations, and company growth, with expertise in software development, SEO, and digital transformation solutions.",
+    desc: "Dr. Roshaan is the Founder and CEO of UniSoft Pvt Ltd. He leads the company’s direction and growth while managing client relationships and overall operations. With strong experience in software development, SEO, and digital solutions, he focuses on helping businesses grow and succeed in the digital world",
   },
   {
     id: 3,
-    name: "Johnathan Doe",
+    name: "Deborah Smith",
     role: "Managing Director (MD)",
     short: "MD",
     img: "member3",
-    desc: "Johnathan Doe manages UniSoft’s daily operations and strategic planning. He ensures smooth execution of projects, maintains quality standards, and drives organizational efficiency and client satisfaction.",
+    desc: "Deborah Smith manages UniSoft’s daily operations and strategic planning. He ensures smooth execution of projects, maintains quality standards, and drives organizational efficiency and client satisfaction.",
   },
 ];
 
@@ -117,7 +117,7 @@ function Teams() {
         <h1>Our Expert Team</h1>
         <p>
           UniSoft has a team of skilled professionals specializing in software
-          development, SEO services, and digital marketing in Pakistan.
+          development, SEO services, and digital marketing globally.
         </p>
       </div>
 
